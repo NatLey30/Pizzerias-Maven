@@ -1,4 +1,5 @@
 import pandas as pd
+import re
 from pyparsing import javaStyleComment
 
 def extract():
@@ -28,6 +29,8 @@ def transfrom(detalles, pizzas, ingredientes, orders, semana):
             if ingredientes.loc[k]['pizza_type_id'] == pizza:
                 ing = ingredientes.loc[k]['ingredients'].split(',')
                 for j in range(len(ing)):
+                    if ing[j][0] == " ":
+                        ing[j] = re.sub(" ","",ing[j], 1)
                     if ing[j] in porciones_ingredientes:
                         if pizzas_pedidas[pizza] == 'S':
                             porciones_ingredientes[ing[j]] += 1
@@ -51,15 +54,14 @@ def transfrom(detalles, pizzas, ingredientes, orders, semana):
                         elif pizzas_pedidas[pizza] == 'XLL':
                             porciones_ingredientes[ing[j]] = 5
     return porciones_ingredientes
-    
+
 def load(porciones_ingredientes):
     comprar = pd.DataFrame(columns =  ['Ingredientes', 'Porciones'])
     i = 0
     for ingrediente in porciones_ingredientes:
         comprar.loc[i] = (str(ingrediente), porciones_ingredientes[ingrediente])
         i += 1
-    print(comprar)
-    comprar.to_csv('compra_semanal.csv') 
+    comprar.to_csv('compra_semanal.csv')
 
 
 if "__main__" == __name__:
