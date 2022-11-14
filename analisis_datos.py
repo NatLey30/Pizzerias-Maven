@@ -1,29 +1,33 @@
 import pandas as pd
 
-def archivo(fichero):
-    print(f'ANALISIS DE DATOS DEL FICHERO {fichero}')
-    df = pd.read_csv(fichero, sep = ',', encoding = 'LATIN1')
+def archivo(fichero, file):
+    file.write(f'ANALISIS DE DATOS DEL FICHERO {fichero}\n')
+    df = pd.read_csv(fichero, sep=',', encoding='LATIN1')
 
     nans = str(df.isna().sum().sum())
-    print(f'Nans totales: {nans}')
+    file.write(f'Nans totales: {nans}\n')
 
     nulls = str(df.isnull().sum().sum())
-    print(f'Nans totales: {nulls}')
+    file.write(f'Nans totales: {nulls}\n')
 
     columnas = df.columns.values
     for colum in range(len(columnas)):
         nombre = columnas[colum]
         tipo_col = str(df[columnas[colum]].dtype)
-        print(f'     La columna "{nombre}" es del tipo: {tipo_col}')
+        file.write(f'     La columna "{nombre}" es del tipo: {tipo_col}\n')
 
 if __name__ == "__main__":
 
-    archivo('order_details.csv')
-    print('---------------------------------------------------------------')
-    archivo('orders.csv')
-    print('---------------------------------------------------------------')
-    archivo('data_dictionary.csv')
-    print('---------------------------------------------------------------')
-    archivo('pizzas.csv')
-    print('---------------------------------------------------------------')
-    archivo('pizza_types.csv')
+    file = open("analisis.txt", 'w')
+
+    archivo('order_details.csv', file)
+    file.write('\n')
+    archivo('orders.csv', file)
+    file.write('\n')
+    archivo('data_dictionary.csv', file)
+    file.write('\n')
+    archivo('pizzas.csv', file)
+    file.write('\n')
+    archivo('pizza_types.csv', file)
+
+    file.close()

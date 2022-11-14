@@ -1,0 +1,37 @@
+ANALISIS DE DATOS DEL FICHERO order_details.csv
+Nans totales: 0
+Nans totales: 0
+     La columna "order_details_id" es del tipo: int64
+     La columna "order_id" es del tipo: int64
+     La columna "pizza_id" es del tipo: object
+     La columna "quantity" es del tipo: int64
+
+ANALISIS DE DATOS DEL FICHERO orders.csv
+Nans totales: 0
+Nans totales: 0
+     La columna "order_id" es del tipo: int64
+     La columna "date" es del tipo: object
+     La columna "time" es del tipo: object
+
+ANALISIS DE DATOS DEL FICHERO data_dictionary.csv
+Nans totales: 0
+Nans totales: 0
+     La columna "Table" es del tipo: object
+     La columna "Field" es del tipo: object
+     La columna "Description" es del tipo: object
+
+ANALISIS DE DATOS DEL FICHERO pizzas.csv
+Nans totales: 0
+Nans totales: 0
+     La columna "pizza_id" es del tipo: object
+     La columna "pizza_type_id" es del tipo: object
+     La columna "size" es del tipo: object
+     La columna "price" es del tipo: float64
+
+ANALISIS DE DATOS DEL FICHERO pizza_types.csv
+Nans totales: 0
+Nans totales: 0
+     La columna "pizza_type_id" es del tipo: object
+     La columna "name" es del tipo: object
+     La columna "category" es del tipo: object
+     La columna "ingredients" es del tipo: object
