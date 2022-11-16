@@ -1,5 +1,6 @@
 import pandas as pd
 
+
 def archivo(fichero, file):
     file.write(f'ANALISIS DE DATOS DEL FICHERO {fichero}\n')
     df = pd.read_csv(fichero, sep=',', encoding='LATIN1')
@@ -15,6 +16,7 @@ def archivo(fichero, file):
         nombre = columnas[colum]
         tipo_col = str(df[columnas[colum]].dtype)
         file.write(f'     La columna "{nombre}" es del tipo: {tipo_col}\n')
+
 
 if __name__ == "__main__":
 
