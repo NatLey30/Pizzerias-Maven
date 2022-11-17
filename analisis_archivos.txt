@@ -1,0 +1,91 @@
+ANALISIS DE DATOS DEL FICHERO order_details.csv
+Nans totales: 0
+Nans totales: 0
+   La columna es: "order_details_id"
+       La columna del tipo: int64
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "order_id"
+       La columna del tipo: int64
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "pizza_id"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "quantity"
+       La columna del tipo: int64
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+
+ANALISIS DE DATOS DEL FICHERO orders.csv
+Nans totales: 0
+Nans totales: 0
+   La columna es: "order_id"
+       La columna del tipo: int64
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "date"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "time"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+
+ANALISIS DE DATOS DEL FICHERO data_dictionary.csv
+Nans totales: 0
+Nans totales: 0
+   La columna es: "Table"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "Field"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "Description"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+
+ANALISIS DE DATOS DEL FICHERO pizzas.csv
+Nans totales: 0
+Nans totales: 0
+   La columna es: "pizza_id"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "pizza_type_id"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "size"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "price"
+       La columna del tipo: float64
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+
+ANALISIS DE DATOS DEL FICHERO pizza_types.csv
+Nans totales: 0
+Nans totales: 0
+   La columna es: "pizza_type_id"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "name"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "category"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
+   La columna es: "ingredients"
+       La columna del tipo: object
+       Los Nans de la columna son: 0
+       Los Nans de la columna son: 0
