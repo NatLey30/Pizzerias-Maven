@@ -6,7 +6,7 @@ Los ficheros de entrada son:
 - order_details.csv
 - pizza_types.csv
 - pizzas.csv
-- data_dictionary
+- data_dictionary.csv
 
 Los ficheros de salida son:
 - reporte.html
