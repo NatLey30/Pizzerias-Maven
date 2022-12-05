@@ -17,3 +17,7 @@ Los ficheros de salida son:
 Los archivos de transformación son:
 - compra.py
 - analisis_datos-csv
+
+Librerías
+- pandas
+- re
